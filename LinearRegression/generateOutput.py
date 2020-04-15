@@ -11,8 +11,8 @@ for i  in range(0,len(contentsOfX)):
 #CODE begins here!
 import random
 
-#set the factor to anything you want
-factor = 0.812
+#set the factor of your choice 
+factor = 0.81
 
 for i in range(0,len(contentsOfX)):
     y.append(round(x[i]*factor + 0.1*random.uniform(-1,1),5))
