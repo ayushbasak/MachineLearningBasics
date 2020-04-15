@@ -3,7 +3,6 @@ import numpy as np
 #Comment out the last piece of code if you dont have matplotlib
 import matplotlib.pyplot as plt
 
-
 #IGNORE this section of code. This is done to deal with file handling of inputs and outputs
 inp = open("input.txt","r")
 out = open("output.txt","r")
@@ -71,7 +70,7 @@ squared_newX = squared_newX(newX)
 regressionSlope = sum(product(newX,newY))/sum(squared_newX)
 yIntercept = meanY - regressionSlope*meanX
 
-print(yIntercept,"  ",regressionSlope)
+print("Y Intercept\t:\t",yIntercept,"\nSlope / Factor\t:\t",regressionSlope)
 
 #If you dont have matplotlib, comment out the code below
 plottedY = []
@@ -80,5 +79,5 @@ for i in range(0,len(x)):
 plottedY = np.array(plottedY)
 
 plt.scatter(x,y)
-plt.plot(x,plottedY)
+plt.plot(x,plottedY,color = "orange")
 plt.show()
